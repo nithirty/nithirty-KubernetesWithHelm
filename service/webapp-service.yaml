@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: fleetman-webapp
+  labels:
+    name: fleetman-webapp-service
+spec:
+  # This defines which pod are going to be represented by this service.
+  # This Service becomes endpoint which connects the POD to the outer world or to the other services within in cluster
+  selector:
+    app: webapp
+  ports:
+    - name: http
+      port: 80
+      nodePort: 30080
+
+  #Clusterip only accessible by other pod inside the cluster, kind of private network mostly used for backend microservice
+  #NodePort allow the outside  world access to cluster .
+
+# ref --> https://www.udemy.com/course/kubernetes-microservices/

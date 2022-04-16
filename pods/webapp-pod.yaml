@@ -1,4 +1,4 @@
-#Basic Pod Template 
+#Basic Pod Template
 apiVersion: v1
 kind: pod
 metadata:
