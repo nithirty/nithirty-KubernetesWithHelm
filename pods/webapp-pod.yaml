@@ -1,0 +1,12 @@
+#Basic Pod Template 
+apiVersion: v1
+kind: pod
+metadata:
+  name: webapp-release-0-5
+  labels:
+    app: webapp
+    release: 0-5
+spec:
+  containers:
+    - name: webapp
+      image: richardchesterwood/k8s-fleetman-webapp-angular:release0-5
