@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: fleetman-activemq
+  labels:
+    app: queue
+
+spec:
+  selector:
+    app: queue
+
+  Ports:
+    - name: http
+      port: 8161
+      type: 30080
+
+  type: NodePort
+
+# ref --> https://www.udemy.com/course/kubernetes-microservices/
