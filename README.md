@@ -69,5 +69,15 @@ AZ --> us-east-1a,us-east-1b,us-east-1c
 
 kops create cluster --zones us-east-1a,us-east-1b,us-east-1c $NAME --yes
 
+NOTE : First create private hosted zone in Aws Route53  with name k8.local then use below command to create the cluster
+this is called gossip dns it more ref--> https://kops.sigs.k8s.io/gossip/ 
 
---dns-zones=apsouth1b.hipster --dns private
+
+kops create cluster --zones us-east-1a,us-east-1b,us-east-1c -- dns private $NAME --yes
+
+
+
+
+
+
+
