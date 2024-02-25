@@ -6,3 +6,23 @@ Release Object : {{ .Release }}
 Subcharts Object : {{ .Subcharts }}
 Templates Object : {{ .Templates }}
 Values Object : {{ .Values }}
+
+
+RELEASE OBJECTS :
+
+Name Object : {{ .Release.Name }}
+Namespace Object : {{ .Release.Namespace }}
+IsUpgrade Object : {{ .Release.IsUpgrade }}
+Revision Object : {{ .Release.Revision }}
+ServiceName Object : {{ .Release.ServiceName }}
+
+
+CHART OBJECTS :
+Name Object : {{ .Chart.Name }}
+AppVersion Object : {{ .Chart.AppVersion }}
+Description Object : {{ .Chart.Description }}
+Maintainers Object : {{ .Chart.Maintainers }}
+Version Object : {{ .Chart.Version }}
+
+
+{{/* Similary all objects can be parsed */}}
