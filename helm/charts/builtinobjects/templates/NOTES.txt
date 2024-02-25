@@ -1,8 +1,0 @@
-{{/* Root Dot Object*/}}
-ALL OBJECTS :
-Chart Object : {{ .Chart }}
-Files Object : {{ .Files }}
-Release Object : {{ .Release }}
-Subcharts Object : {{ .Subcharts }}
-Templates Object : {{ .Templates }}
-Values Object : {{ .Values }}
