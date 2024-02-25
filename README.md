@@ -23,7 +23,6 @@ AmazonSQSFullAccess
 AmazonEventBridgeFullAccess
 
 # configure the aws client to use your new IAM user
-# configure the aws client to use your new IAM user
 aws configure           # Use your new access and secret key here
 aws iam list-users      # you should see a list of all your IAM users here
 
