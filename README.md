@@ -1,15 +1,10 @@
 # nithirty-KubernetesWithHelm
 Hands-On  Kubernetes to deploy a Microservice architecture  Monitor cluster .
 
-
-
 **Steps to create K8 cluster using kops**
 
 Launch and ec2 instance on aws to bootstrap K8 Cluster
 ssh to instance
-
-
-
 
 create user(lets name it "kops") in aws console with programmatic access
 create group with below-mentioned policies and kops user attached to it.
@@ -26,7 +21,7 @@ AmazonEventBridgeFullAccess
 aws configure           # Use your new access and secret key here
 aws iam list-users      # you should see a list of all your IAM users here
 
-# Because "aws configure" doesn't export these vars for kops to use, we export them now
+Because "aws configure" doesn't export these vars for kops to use, we export them now
 export AWS_ACCESS_KEY_ID=$(aws configure get aws_access_key_id)
 export AWS_SECRET_ACCESS_KEY=$(aws configure get aws_secret_access_key)
 
